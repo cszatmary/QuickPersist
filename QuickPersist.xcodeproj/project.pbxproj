@@ -1,0 +1,1443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 47;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06E1FF5818970F360C648B85 /* Pods_QuickPersist_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26373AA81A3390A20F472402 /* Pods_QuickPersist_tvOS.framework */; };
+		21EC0D6CDA2C7DD245F6ACFD /* Pods_QuickPersist_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91F6BCE32C0422F020D114EF /* Pods_QuickPersist_macOS.framework */; };
+		2933E5862B71722BF906DD19 /* Pods_QuickPersist_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D104E411CBC7966427788D28 /* Pods_QuickPersist_iOS.framework */; };
+		2E3CE78D6E613CD0AC55DD7C /* Pods_QuickPersist_tvOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECC1F4900FE8E20C918BB522 /* Pods_QuickPersist_tvOS_Tests.framework */; };
+		43D70CB6A61895175B4FA2C7 /* Pods_QuickPersist_iOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BACB4C09626E9AEA19183FE /* Pods_QuickPersist_iOS_Tests.framework */; };
+		52D6D9871BEFF229002C0205 /* QuickPersist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D97C1BEFF229002C0205 /* QuickPersist.framework */; };
+		8933C78E1EB5B82C000D00A4 /* QuickPersistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7891EB5B82A000D00A4 /* QuickPersistTests.swift */; };
+		8933C78F1EB5B82C000D00A4 /* QuickPersistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7891EB5B82A000D00A4 /* QuickPersistTests.swift */; };
+		8933C7901EB5B82D000D00A4 /* QuickPersistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7891EB5B82A000D00A4 /* QuickPersistTests.swift */; };
+		9ABB8DCCFC4199F9F4E97379 /* Pods_QuickPersist_watchOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF9FAF39DB507BFE60B7D950 /* Pods_QuickPersist_watchOS.framework */; };
+		AFDA95A3F2075F09F8B44B26 /* Pods_QuickPersist_macOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64DAA9336083E5836ED3F3D3 /* Pods_QuickPersist_macOS_Tests.framework */; };
+		DD7502881C68FEDE006590AF /* QuickPersist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6DA0F1BF000BD002C0205 /* QuickPersist.framework */; };
+		DD7502921C690C7A006590AF /* QuickPersist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D9F01BEFFFBE002C0205 /* QuickPersist.framework */; };
+		E38BE5381F8DCA200074493B /* QPContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38BE5351F8DC9CC0074493B /* QPContainer.swift */; };
+		E38BE5391F8DCA200074493B /* QPContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38BE5351F8DC9CC0074493B /* QPContainer.swift */; };
+		E38BE53B1F8DCA210074493B /* QPContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38BE5351F8DC9CC0074493B /* QPContainer.swift */; };
+		E38BE53C1F8DCA220074493B /* QPContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38BE5351F8DC9CC0074493B /* QPContainer.swift */; };
+		E38BE53D1F8DCA240074493B /* Persistable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38BE5361F8DC9CC0074493B /* Persistable.swift */; };
+		E38BE53E1F8DCA250074493B /* Persistable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38BE5361F8DC9CC0074493B /* Persistable.swift */; };
+		E38BE53F1F8DCA250074493B /* Persistable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38BE5361F8DC9CC0074493B /* Persistable.swift */; };
+		E38BE5401F8DCA250074493B /* Persistable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38BE5361F8DC9CC0074493B /* Persistable.swift */; };
+		E38BE5411F8DCA270074493B /* QPResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38BE5331F8DC9CC0074493B /* QPResults.swift */; };
+		E38BE5421F8DCA270074493B /* QPResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38BE5331F8DC9CC0074493B /* QPResults.swift */; };
+		E38BE5431F8DCA280074493B /* QPResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38BE5331F8DC9CC0074493B /* QPResults.swift */; };
+		E38BE5441F8DCA290074493B /* QPResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38BE5331F8DC9CC0074493B /* QPResults.swift */; };
+		E38BE5451F8DCA2A0074493B /* RealmOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38BE5371F8DC9CD0074493B /* RealmOperator.swift */; };
+		E38BE5461F8DCA2B0074493B /* RealmOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38BE5371F8DC9CD0074493B /* RealmOperator.swift */; };
+		E38BE5471F8DCA2C0074493B /* RealmOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38BE5371F8DC9CD0074493B /* RealmOperator.swift */; };
+		E38BE5481F8DCA2C0074493B /* RealmOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38BE5371F8DC9CD0074493B /* RealmOperator.swift */; };
+		E38BE5491F8DCA2E0074493B /* WriteTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38BE5341F8DC9CC0074493B /* WriteTransaction.swift */; };
+		E38BE54A1F8DCA2F0074493B /* WriteTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38BE5341F8DC9CC0074493B /* WriteTransaction.swift */; };
+		E38BE54B1F8DCA2F0074493B /* WriteTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38BE5341F8DC9CC0074493B /* WriteTransaction.swift */; };
+		E38BE54C1F8DCA2F0074493B /* WriteTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38BE5341F8DC9CC0074493B /* WriteTransaction.swift */; };
+		E38BE54E1F8E70B40074493B /* QPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38BE54D1F8E70B40074493B /* QPError.swift */; };
+		E38BE54F1F8E70CD0074493B /* QPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38BE54D1F8E70B40074493B /* QPError.swift */; };
+		E38BE5501F8E70CD0074493B /* QPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38BE54D1F8E70B40074493B /* QPError.swift */; };
+		E38BE5511F8E70CE0074493B /* QPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38BE54D1F8E70B40074493B /* QPError.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52D6D9881BEFF229002C0205 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52D6D9731BEFF229002C0205 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52D6D97B1BEFF229002C0205;
+			remoteInfo = QuickPersist;
+		};
+		DD7502801C68FCFC006590AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52D6D9731BEFF229002C0205 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52D6DA0E1BF000BD002C0205;
+			remoteInfo = "QuickPersist-macOS";
+		};
+		DD7502931C690C7A006590AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52D6D9731BEFF229002C0205 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52D6D9EF1BEFFFBE002C0205;
+			remoteInfo = "QuickPersist-tvOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02139AEF91B38A7B3392BEF8 /* Pods-QuickPersist-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickPersist-macOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickPersist-macOS/Pods-QuickPersist-macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		032D8812A783A4E5B468F8FF /* Pods-QuickPersist-watchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickPersist-watchOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickPersist-watchOS/Pods-QuickPersist-watchOS.debug.xcconfig"; sourceTree = "<group>"; };
+		26373AA81A3390A20F472402 /* Pods_QuickPersist_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickPersist_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C6CF4079398E7260FE84DAD /* Pods-QuickPersist-macOS Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickPersist-macOS Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickPersist-macOS Tests/Pods-QuickPersist-macOS Tests.release.xcconfig"; sourceTree = "<group>"; };
+		4D48B6841BED7FF4E47F861A /* Pods-QuickPersist-iOS Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickPersist-iOS Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickPersist-iOS Tests/Pods-QuickPersist-iOS Tests.release.xcconfig"; sourceTree = "<group>"; };
+		52D6D97C1BEFF229002C0205 /* QuickPersist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QuickPersist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52D6D9861BEFF229002C0205 /* QuickPersist-iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "QuickPersist-iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52D6D9E21BEFFF6E002C0205 /* QuickPersist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QuickPersist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52D6D9F01BEFFFBE002C0205 /* QuickPersist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QuickPersist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52D6DA0F1BF000BD002C0205 /* QuickPersist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QuickPersist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EAEAF67DE96570FDB74E40C /* Pods-QuickPersist-macOS Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickPersist-macOS Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickPersist-macOS Tests/Pods-QuickPersist-macOS Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		64DAA9336083E5836ED3F3D3 /* Pods_QuickPersist_macOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickPersist_macOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68C73F7070D38B9EB6AD958A /* Pods-QuickPersist-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickPersist-macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickPersist-macOS/Pods-QuickPersist-macOS.release.xcconfig"; sourceTree = "<group>"; };
+		69BFF3B25A5876D9F20B0F09 /* Pods-QuickPersist-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickPersist-tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickPersist-tvOS/Pods-QuickPersist-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		7F2AE8754A5E71381FA64B88 /* Pods-QuickPersist-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickPersist-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickPersist-iOS/Pods-QuickPersist-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		85E1D3DBED77A53E058A5AA7 /* Pods-QuickPersist-tvOS Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickPersist-tvOS Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickPersist-tvOS Tests/Pods-QuickPersist-tvOS Tests.release.xcconfig"; sourceTree = "<group>"; };
+		8933C7891EB5B82A000D00A4 /* QuickPersistTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickPersistTests.swift; sourceTree = "<group>"; };
+		8BACB4C09626E9AEA19183FE /* Pods_QuickPersist_iOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickPersist_iOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91F6BCE32C0422F020D114EF /* Pods_QuickPersist_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickPersist_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4AD4AA98EC1E4E6C565252A /* Pods-QuickPersist-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickPersist-tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickPersist-tvOS/Pods-QuickPersist-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		A4E8340BD443F3058F3F92E3 /* Pods-QuickPersist-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickPersist-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickPersist-iOS/Pods-QuickPersist-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		A555A57F9B2E524DFF22B821 /* Pods-QuickPersist-watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickPersist-watchOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickPersist-watchOS/Pods-QuickPersist-watchOS.release.xcconfig"; sourceTree = "<group>"; };
+		AD2FAA261CD0B6D800659CF4 /* QuickPersist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = QuickPersist.plist; sourceTree = "<group>"; };
+		AD2FAA281CD0B6E100659CF4 /* QuickPersistTests.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = QuickPersistTests.plist; sourceTree = "<group>"; };
+		CF9FAF39DB507BFE60B7D950 /* Pods_QuickPersist_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickPersist_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFB74503C97E951C3C0E853F /* Pods-QuickPersist-iOS Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickPersist-iOS Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickPersist-iOS Tests/Pods-QuickPersist-iOS Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		D104E411CBC7966427788D28 /* Pods_QuickPersist_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickPersist_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD75027A1C68FCFC006590AF /* QuickPersist-macOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "QuickPersist-macOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD75028D1C690C7A006590AF /* QuickPersist-tvOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "QuickPersist-tvOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E38BE5301F8DA1360074493B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E38BE5311F8DA1360074493B /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		E38BE5321F8DA1360074493B /* QuickPersist.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = QuickPersist.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E38BE5331F8DC9CC0074493B /* QPResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QPResults.swift; sourceTree = "<group>"; };
+		E38BE5341F8DC9CC0074493B /* WriteTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteTransaction.swift; sourceTree = "<group>"; };
+		E38BE5351F8DC9CC0074493B /* QPContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QPContainer.swift; sourceTree = "<group>"; };
+		E38BE5361F8DC9CC0074493B /* Persistable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistable.swift; sourceTree = "<group>"; };
+		E38BE5371F8DC9CD0074493B /* RealmOperator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmOperator.swift; sourceTree = "<group>"; };
+		E38BE54D1F8E70B40074493B /* QPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QPError.swift; sourceTree = "<group>"; };
+		ECC1F4900FE8E20C918BB522 /* Pods_QuickPersist_tvOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickPersist_tvOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFCD880926B76A7CB77B9180 /* Pods-QuickPersist-tvOS Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickPersist-tvOS Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickPersist-tvOS Tests/Pods-QuickPersist-tvOS Tests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52D6D9781BEFF229002C0205 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2933E5862B71722BF906DD19 /* Pods_QuickPersist_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52D6D9831BEFF229002C0205 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52D6D9871BEFF229002C0205 /* QuickPersist.framework in Frameworks */,
+				43D70CB6A61895175B4FA2C7 /* Pods_QuickPersist_iOS_Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52D6D9DE1BEFFF6E002C0205 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ABB8DCCFC4199F9F4E97379 /* Pods_QuickPersist_watchOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52D6D9EC1BEFFFBE002C0205 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06E1FF5818970F360C648B85 /* Pods_QuickPersist_tvOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52D6DA0B1BF000BD002C0205 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21EC0D6CDA2C7DD245F6ACFD /* Pods_QuickPersist_macOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD7502771C68FCFC006590AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD7502881C68FEDE006590AF /* QuickPersist.framework in Frameworks */,
+				AFDA95A3F2075F09F8B44B26 /* Pods_QuickPersist_macOS_Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD75028A1C690C7A006590AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD7502921C690C7A006590AF /* QuickPersist.framework in Frameworks */,
+				2E3CE78D6E613CD0AC55DD7C /* Pods_QuickPersist_tvOS_Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0BFC5961B79EA86BCCDDEE76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D104E411CBC7966427788D28 /* Pods_QuickPersist_iOS.framework */,
+				8BACB4C09626E9AEA19183FE /* Pods_QuickPersist_iOS_Tests.framework */,
+				91F6BCE32C0422F020D114EF /* Pods_QuickPersist_macOS.framework */,
+				64DAA9336083E5836ED3F3D3 /* Pods_QuickPersist_macOS_Tests.framework */,
+				26373AA81A3390A20F472402 /* Pods_QuickPersist_tvOS.framework */,
+				ECC1F4900FE8E20C918BB522 /* Pods_QuickPersist_tvOS_Tests.framework */,
+				CF9FAF39DB507BFE60B7D950 /* Pods_QuickPersist_watchOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		52D6D9721BEFF229002C0205 = {
+			isa = PBXGroup;
+			children = (
+				E38BE52F1F8DA1230074493B /* Metadata */,
+				8933C7811EB5B7E0000D00A4 /* Sources */,
+				8933C7831EB5B7EB000D00A4 /* Tests */,
+				52D6D99C1BEFF38C002C0205 /* Configs */,
+				52D6D97D1BEFF229002C0205 /* Products */,
+				D386306EC9A68C7D70B3E4E9 /* Pods */,
+				0BFC5961B79EA86BCCDDEE76 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		52D6D97D1BEFF229002C0205 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52D6D97C1BEFF229002C0205 /* QuickPersist.framework */,
+				52D6D9861BEFF229002C0205 /* QuickPersist-iOS Tests.xctest */,
+				52D6D9E21BEFFF6E002C0205 /* QuickPersist.framework */,
+				52D6D9F01BEFFFBE002C0205 /* QuickPersist.framework */,
+				52D6DA0F1BF000BD002C0205 /* QuickPersist.framework */,
+				DD75027A1C68FCFC006590AF /* QuickPersist-macOS Tests.xctest */,
+				DD75028D1C690C7A006590AF /* QuickPersist-tvOS Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52D6D99C1BEFF38C002C0205 /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				DD7502721C68FC1B006590AF /* Frameworks */,
+				DD7502731C68FC20006590AF /* Tests */,
+			);
+			path = Configs;
+			sourceTree = "<group>";
+		};
+		8933C7811EB5B7E0000D00A4 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E38BE5351F8DC9CC0074493B /* QPContainer.swift */,
+				E38BE5361F8DC9CC0074493B /* Persistable.swift */,
+				E38BE5331F8DC9CC0074493B /* QPResults.swift */,
+				E38BE5371F8DC9CD0074493B /* RealmOperator.swift */,
+				E38BE5341F8DC9CC0074493B /* WriteTransaction.swift */,
+				E38BE54D1F8E70B40074493B /* QPError.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		8933C7831EB5B7EB000D00A4 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8933C7891EB5B82A000D00A4 /* QuickPersistTests.swift */,
+			);
+			name = Tests;
+			path = Tests/QuickPersistTests;
+			sourceTree = "<group>";
+		};
+		D386306EC9A68C7D70B3E4E9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F2AE8754A5E71381FA64B88 /* Pods-QuickPersist-iOS.debug.xcconfig */,
+				A4E8340BD443F3058F3F92E3 /* Pods-QuickPersist-iOS.release.xcconfig */,
+				CFB74503C97E951C3C0E853F /* Pods-QuickPersist-iOS Tests.debug.xcconfig */,
+				4D48B6841BED7FF4E47F861A /* Pods-QuickPersist-iOS Tests.release.xcconfig */,
+				02139AEF91B38A7B3392BEF8 /* Pods-QuickPersist-macOS.debug.xcconfig */,
+				68C73F7070D38B9EB6AD958A /* Pods-QuickPersist-macOS.release.xcconfig */,
+				5EAEAF67DE96570FDB74E40C /* Pods-QuickPersist-macOS Tests.debug.xcconfig */,
+				3C6CF4079398E7260FE84DAD /* Pods-QuickPersist-macOS Tests.release.xcconfig */,
+				69BFF3B25A5876D9F20B0F09 /* Pods-QuickPersist-tvOS.debug.xcconfig */,
+				A4AD4AA98EC1E4E6C565252A /* Pods-QuickPersist-tvOS.release.xcconfig */,
+				FFCD880926B76A7CB77B9180 /* Pods-QuickPersist-tvOS Tests.debug.xcconfig */,
+				85E1D3DBED77A53E058A5AA7 /* Pods-QuickPersist-tvOS Tests.release.xcconfig */,
+				032D8812A783A4E5B468F8FF /* Pods-QuickPersist-watchOS.debug.xcconfig */,
+				A555A57F9B2E524DFF22B821 /* Pods-QuickPersist-watchOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DD7502721C68FC1B006590AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD2FAA261CD0B6D800659CF4 /* QuickPersist.plist */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD7502731C68FC20006590AF /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				AD2FAA281CD0B6E100659CF4 /* QuickPersistTests.plist */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		E38BE52F1F8DA1230074493B /* Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				E38BE5311F8DA1360074493B /* LICENSE */,
+				E38BE5321F8DA1360074493B /* QuickPersist.podspec */,
+				E38BE5301F8DA1360074493B /* README.md */,
+			);
+			name = Metadata;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		52D6D9791BEFF229002C0205 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52D6D9DF1BEFFF6E002C0205 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52D6D9ED1BEFFFBE002C0205 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52D6DA0C1BF000BD002C0205 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		52D6D97B1BEFF229002C0205 /* QuickPersist-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52D6D9901BEFF229002C0205 /* Build configuration list for PBXNativeTarget "QuickPersist-iOS" */;
+			buildPhases = (
+				B7FE864514E64B68C88754E5 /* [CP] Check Pods Manifest.lock */,
+				52D6D9771BEFF229002C0205 /* Sources */,
+				52D6D9781BEFF229002C0205 /* Frameworks */,
+				52D6D9791BEFF229002C0205 /* Headers */,
+				52D6D97A1BEFF229002C0205 /* Resources */,
+				1327EB6CB7B61496ED346C79 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "QuickPersist-iOS";
+			productName = QuickPersist;
+			productReference = 52D6D97C1BEFF229002C0205 /* QuickPersist.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		52D6D9851BEFF229002C0205 /* QuickPersist-iOS Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52D6D9931BEFF229002C0205 /* Build configuration list for PBXNativeTarget "QuickPersist-iOS Tests" */;
+			buildPhases = (
+				DC32C5B6E28CE942858F8BCF /* [CP] Check Pods Manifest.lock */,
+				52D6D9821BEFF229002C0205 /* Sources */,
+				52D6D9831BEFF229002C0205 /* Frameworks */,
+				52D6D9841BEFF229002C0205 /* Resources */,
+				F7495C9D9D58FA030B56AB04 /* [CP] Embed Pods Frameworks */,
+				CAAB764F2BB631643103E6F5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52D6D9891BEFF229002C0205 /* PBXTargetDependency */,
+			);
+			name = "QuickPersist-iOS Tests";
+			productName = QuickPersistTests;
+			productReference = 52D6D9861BEFF229002C0205 /* QuickPersist-iOS Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		52D6D9E11BEFFF6E002C0205 /* QuickPersist-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52D6D9E71BEFFF6E002C0205 /* Build configuration list for PBXNativeTarget "QuickPersist-watchOS" */;
+			buildPhases = (
+				917DB155D1F3C6D8E5797E83 /* [CP] Check Pods Manifest.lock */,
+				52D6D9DD1BEFFF6E002C0205 /* Sources */,
+				52D6D9DE1BEFFF6E002C0205 /* Frameworks */,
+				52D6D9DF1BEFFF6E002C0205 /* Headers */,
+				52D6D9E01BEFFF6E002C0205 /* Resources */,
+				8ADCD0B0D2047C6F9D3BDAA2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "QuickPersist-watchOS";
+			productName = "QuickPersist-watchOS";
+			productReference = 52D6D9E21BEFFF6E002C0205 /* QuickPersist.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		52D6D9EF1BEFFFBE002C0205 /* QuickPersist-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52D6DA011BEFFFBE002C0205 /* Build configuration list for PBXNativeTarget "QuickPersist-tvOS" */;
+			buildPhases = (
+				3FA0E2CFFD55726600DF8BC4 /* [CP] Check Pods Manifest.lock */,
+				52D6D9EB1BEFFFBE002C0205 /* Sources */,
+				52D6D9EC1BEFFFBE002C0205 /* Frameworks */,
+				52D6D9ED1BEFFFBE002C0205 /* Headers */,
+				52D6D9EE1BEFFFBE002C0205 /* Resources */,
+				B3F95AB051DADBF96C86FFDF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "QuickPersist-tvOS";
+			productName = "QuickPersist-tvOS";
+			productReference = 52D6D9F01BEFFFBE002C0205 /* QuickPersist.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		52D6DA0E1BF000BD002C0205 /* QuickPersist-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52D6DA201BF000BD002C0205 /* Build configuration list for PBXNativeTarget "QuickPersist-macOS" */;
+			buildPhases = (
+				A9704156E0BDC3860757878D /* [CP] Check Pods Manifest.lock */,
+				52D6DA0A1BF000BD002C0205 /* Sources */,
+				52D6DA0B1BF000BD002C0205 /* Frameworks */,
+				52D6DA0C1BF000BD002C0205 /* Headers */,
+				52D6DA0D1BF000BD002C0205 /* Resources */,
+				19F3CECC1E7B9521F939A206 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "QuickPersist-macOS";
+			productName = "QuickPersist-macOS";
+			productReference = 52D6DA0F1BF000BD002C0205 /* QuickPersist.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DD7502791C68FCFC006590AF /* QuickPersist-macOS Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD7502821C68FCFC006590AF /* Build configuration list for PBXNativeTarget "QuickPersist-macOS Tests" */;
+			buildPhases = (
+				B8E309EF037CFB5197793F5A /* [CP] Check Pods Manifest.lock */,
+				DD7502761C68FCFC006590AF /* Sources */,
+				DD7502771C68FCFC006590AF /* Frameworks */,
+				DD7502781C68FCFC006590AF /* Resources */,
+				499EB514DB3E57C0536F6395 /* [CP] Embed Pods Frameworks */,
+				A20C12B227B3263C4849133B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD7502811C68FCFC006590AF /* PBXTargetDependency */,
+			);
+			name = "QuickPersist-macOS Tests";
+			productName = "QuickPersist-OS Tests";
+			productReference = DD75027A1C68FCFC006590AF /* QuickPersist-macOS Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DD75028C1C690C7A006590AF /* QuickPersist-tvOS Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD7502951C690C7A006590AF /* Build configuration list for PBXNativeTarget "QuickPersist-tvOS Tests" */;
+			buildPhases = (
+				73C06608F32299B54E199282 /* [CP] Check Pods Manifest.lock */,
+				DD7502891C690C7A006590AF /* Sources */,
+				DD75028A1C690C7A006590AF /* Frameworks */,
+				DD75028B1C690C7A006590AF /* Resources */,
+				3665A2F343FCE24048125F2E /* [CP] Embed Pods Frameworks */,
+				5EB5E231FBB51319850956B7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD7502941C690C7A006590AF /* PBXTargetDependency */,
+			);
+			name = "QuickPersist-tvOS Tests";
+			productName = "QuickPersist-tvOS Tests";
+			productReference = DD75028D1C690C7A006590AF /* QuickPersist-tvOS Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52D6D9731BEFF229002C0205 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = QuickPersist;
+				TargetAttributes = {
+					52D6D97B1BEFF229002C0205 = {
+						CreatedOnToolsVersion = 7.1;
+						LastSwiftMigration = 0800;
+					};
+					52D6D9851BEFF229002C0205 = {
+						CreatedOnToolsVersion = 7.1;
+						LastSwiftMigration = 0800;
+					};
+					52D6D9E11BEFFF6E002C0205 = {
+						CreatedOnToolsVersion = 7.1;
+						LastSwiftMigration = 0800;
+					};
+					52D6D9EF1BEFFFBE002C0205 = {
+						CreatedOnToolsVersion = 7.1;
+						LastSwiftMigration = 0800;
+					};
+					52D6DA0E1BF000BD002C0205 = {
+						CreatedOnToolsVersion = 7.1;
+						LastSwiftMigration = 0800;
+					};
+					DD7502791C68FCFC006590AF = {
+						CreatedOnToolsVersion = 7.2.1;
+						LastSwiftMigration = 0800;
+					};
+					DD75028C1C690C7A006590AF = {
+						CreatedOnToolsVersion = 7.2.1;
+						LastSwiftMigration = 0800;
+					};
+				};
+			};
+			buildConfigurationList = 52D6D9761BEFF229002C0205 /* Build configuration list for PBXProject "QuickPersist" */;
+			compatibilityVersion = "Xcode 6.3";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 52D6D9721BEFF229002C0205;
+			productRefGroup = 52D6D97D1BEFF229002C0205 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52D6D97B1BEFF229002C0205 /* QuickPersist-iOS */,
+				52D6DA0E1BF000BD002C0205 /* QuickPersist-macOS */,
+				52D6D9E11BEFFF6E002C0205 /* QuickPersist-watchOS */,
+				52D6D9EF1BEFFFBE002C0205 /* QuickPersist-tvOS */,
+				52D6D9851BEFF229002C0205 /* QuickPersist-iOS Tests */,
+				DD7502791C68FCFC006590AF /* QuickPersist-macOS Tests */,
+				DD75028C1C690C7A006590AF /* QuickPersist-tvOS Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52D6D97A1BEFF229002C0205 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52D6D9841BEFF229002C0205 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52D6D9E01BEFFF6E002C0205 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52D6D9EE1BEFFFBE002C0205 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52D6DA0D1BF000BD002C0205 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD7502781C68FCFC006590AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD75028B1C690C7A006590AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1327EB6CB7B61496ED346C79 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickPersist-iOS/Pods-QuickPersist-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		19F3CECC1E7B9521F939A206 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickPersist-macOS/Pods-QuickPersist-macOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3665A2F343FCE24048125F2E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-QuickPersist-tvOS Tests/Pods-QuickPersist-tvOS Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm-tvOS/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift-tvOS/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickPersist-tvOS Tests/Pods-QuickPersist-tvOS Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3FA0E2CFFD55726600DF8BC4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuickPersist-tvOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		499EB514DB3E57C0536F6395 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-QuickPersist-macOS Tests/Pods-QuickPersist-macOS Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm-macOS/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift-macOS/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickPersist-macOS Tests/Pods-QuickPersist-macOS Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5EB5E231FBB51319850956B7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickPersist-tvOS Tests/Pods-QuickPersist-tvOS Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73C06608F32299B54E199282 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuickPersist-tvOS Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8ADCD0B0D2047C6F9D3BDAA2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickPersist-watchOS/Pods-QuickPersist-watchOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		917DB155D1F3C6D8E5797E83 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuickPersist-watchOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A20C12B227B3263C4849133B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickPersist-macOS Tests/Pods-QuickPersist-macOS Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9704156E0BDC3860757878D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuickPersist-macOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3F95AB051DADBF96C86FFDF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickPersist-tvOS/Pods-QuickPersist-tvOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7FE864514E64B68C88754E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuickPersist-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8E309EF037CFB5197793F5A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuickPersist-macOS Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CAAB764F2BB631643103E6F5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickPersist-iOS Tests/Pods-QuickPersist-iOS Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC32C5B6E28CE942858F8BCF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuickPersist-iOS Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7495C9D9D58FA030B56AB04 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-QuickPersist-iOS Tests/Pods-QuickPersist-iOS Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm-iOS/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift-iOS/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickPersist-iOS Tests/Pods-QuickPersist-iOS Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52D6D9771BEFF229002C0205 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E38BE5411F8DCA270074493B /* QPResults.swift in Sources */,
+				E38BE53D1F8DCA240074493B /* Persistable.swift in Sources */,
+				E38BE5381F8DCA200074493B /* QPContainer.swift in Sources */,
+				E38BE54E1F8E70B40074493B /* QPError.swift in Sources */,
+				E38BE5451F8DCA2A0074493B /* RealmOperator.swift in Sources */,
+				E38BE5491F8DCA2E0074493B /* WriteTransaction.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52D6D9821BEFF229002C0205 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8933C7901EB5B82D000D00A4 /* QuickPersistTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52D6D9DD1BEFFF6E002C0205 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E38BE5431F8DCA280074493B /* QPResults.swift in Sources */,
+				E38BE53F1F8DCA250074493B /* Persistable.swift in Sources */,
+				E38BE53C1F8DCA220074493B /* QPContainer.swift in Sources */,
+				E38BE5501F8E70CD0074493B /* QPError.swift in Sources */,
+				E38BE5471F8DCA2C0074493B /* RealmOperator.swift in Sources */,
+				E38BE54B1F8DCA2F0074493B /* WriteTransaction.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52D6D9EB1BEFFFBE002C0205 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E38BE5441F8DCA290074493B /* QPResults.swift in Sources */,
+				E38BE5401F8DCA250074493B /* Persistable.swift in Sources */,
+				E38BE53B1F8DCA210074493B /* QPContainer.swift in Sources */,
+				E38BE5511F8E70CE0074493B /* QPError.swift in Sources */,
+				E38BE5481F8DCA2C0074493B /* RealmOperator.swift in Sources */,
+				E38BE54C1F8DCA2F0074493B /* WriteTransaction.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52D6DA0A1BF000BD002C0205 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E38BE5421F8DCA270074493B /* QPResults.swift in Sources */,
+				E38BE53E1F8DCA250074493B /* Persistable.swift in Sources */,
+				E38BE5391F8DCA200074493B /* QPContainer.swift in Sources */,
+				E38BE54F1F8E70CD0074493B /* QPError.swift in Sources */,
+				E38BE5461F8DCA2B0074493B /* RealmOperator.swift in Sources */,
+				E38BE54A1F8DCA2F0074493B /* WriteTransaction.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD7502761C68FCFC006590AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8933C78F1EB5B82C000D00A4 /* QuickPersistTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD7502891C690C7A006590AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8933C78E1EB5B82C000D00A4 /* QuickPersistTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52D6D9891BEFF229002C0205 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52D6D97B1BEFF229002C0205 /* QuickPersist-iOS */;
+			targetProxy = 52D6D9881BEFF229002C0205 /* PBXContainerItemProxy */;
+		};
+		DD7502811C68FCFC006590AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52D6DA0E1BF000BD002C0205 /* QuickPersist-macOS */;
+			targetProxy = DD7502801C68FCFC006590AF /* PBXContainerItemProxy */;
+		};
+		DD7502941C690C7A006590AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52D6D9EF1BEFFFBE002C0205 /* QuickPersist-tvOS */;
+			targetProxy = DD7502931C690C7A006590AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		52D6D98E1BEFF229002C0205 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		52D6D98F1BEFF229002C0205 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		52D6D9911BEFF229002C0205 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F2AE8754A5E71381FA64B88 /* Pods-QuickPersist-iOS.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Configs/QuickPersist.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.QuickPersist.QuickPersist-iOS";
+				PRODUCT_NAME = QuickPersist;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		52D6D9921BEFF229002C0205 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4E8340BD443F3058F3F92E3 /* Pods-QuickPersist-iOS.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Configs/QuickPersist.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.QuickPersist.QuickPersist-iOS";
+				PRODUCT_NAME = QuickPersist;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		52D6D9941BEFF229002C0205 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFB74503C97E951C3C0E853F /* Pods-QuickPersist-iOS Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = Configs/QuickPersistTests.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.QuickPersist.QuickPersist-iOS-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		52D6D9951BEFF229002C0205 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D48B6841BED7FF4E47F861A /* Pods-QuickPersist-iOS Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = Configs/QuickPersistTests.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.QuickPersist.QuickPersist-iOS-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		52D6D9E81BEFFF6E002C0205 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 032D8812A783A4E5B468F8FF /* Pods-QuickPersist-watchOS.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Configs/QuickPersist.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.QuickPersist.QuickPersist-watchOS";
+				PRODUCT_NAME = QuickPersist;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		52D6D9E91BEFFF6E002C0205 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A555A57F9B2E524DFF22B821 /* Pods-QuickPersist-watchOS.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Configs/QuickPersist.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.QuickPersist.QuickPersist-watchOS";
+				PRODUCT_NAME = QuickPersist;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		52D6DA021BEFFFBE002C0205 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69BFF3B25A5876D9F20B0F09 /* Pods-QuickPersist-tvOS.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Configs/QuickPersist.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.QuickPersist.QuickPersist-tvOS";
+				PRODUCT_NAME = QuickPersist;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		52D6DA031BEFFFBE002C0205 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4AD4AA98EC1E4E6C565252A /* Pods-QuickPersist-tvOS.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Configs/QuickPersist.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.QuickPersist.QuickPersist-tvOS";
+				PRODUCT_NAME = QuickPersist;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		52D6DA211BF000BD002C0205 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02139AEF91B38A7B3392BEF8 /* Pods-QuickPersist-macOS.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Configs/QuickPersist.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.QuickPersist.QuickPersist-macOS";
+				PRODUCT_NAME = QuickPersist;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		52D6DA221BF000BD002C0205 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68C73F7070D38B9EB6AD958A /* Pods-QuickPersist-macOS.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Configs/QuickPersist.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.QuickPersist.QuickPersist-macOS";
+				PRODUCT_NAME = QuickPersist;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		DD7502831C68FCFC006590AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EAEAF67DE96570FDB74E40C /* Pods-QuickPersist-macOS Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Configs/QuickPersistTests.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.QuickPersist.QuickPersist-macOS-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		DD7502841C68FCFC006590AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C6CF4079398E7260FE84DAD /* Pods-QuickPersist-macOS Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Configs/QuickPersistTests.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.QuickPersist.QuickPersist-macOS-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		DD7502961C690C7A006590AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFCD880926B76A7CB77B9180 /* Pods-QuickPersist-tvOS Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = Configs/QuickPersistTests.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.QuickPersist.QuickPersist-tvOS-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		DD7502971C690C7A006590AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85E1D3DBED77A53E058A5AA7 /* Pods-QuickPersist-tvOS Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = Configs/QuickPersistTests.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.QuickPersist.QuickPersist-tvOS-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52D6D9761BEFF229002C0205 /* Build configuration list for PBXProject "QuickPersist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52D6D98E1BEFF229002C0205 /* Debug */,
+				52D6D98F1BEFF229002C0205 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52D6D9901BEFF229002C0205 /* Build configuration list for PBXNativeTarget "QuickPersist-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52D6D9911BEFF229002C0205 /* Debug */,
+				52D6D9921BEFF229002C0205 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52D6D9931BEFF229002C0205 /* Build configuration list for PBXNativeTarget "QuickPersist-iOS Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52D6D9941BEFF229002C0205 /* Debug */,
+				52D6D9951BEFF229002C0205 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52D6D9E71BEFFF6E002C0205 /* Build configuration list for PBXNativeTarget "QuickPersist-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52D6D9E81BEFFF6E002C0205 /* Debug */,
+				52D6D9E91BEFFF6E002C0205 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52D6DA011BEFFFBE002C0205 /* Build configuration list for PBXNativeTarget "QuickPersist-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52D6DA021BEFFFBE002C0205 /* Debug */,
+				52D6DA031BEFFFBE002C0205 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52D6DA201BF000BD002C0205 /* Build configuration list for PBXNativeTarget "QuickPersist-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52D6DA211BF000BD002C0205 /* Debug */,
+				52D6DA221BF000BD002C0205 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD7502821C68FCFC006590AF /* Build configuration list for PBXNativeTarget "QuickPersist-macOS Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD7502831C68FCFC006590AF /* Debug */,
+				DD7502841C68FCFC006590AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD7502951C690C7A006590AF /* Build configuration list for PBXNativeTarget "QuickPersist-tvOS Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD7502961C690C7A006590AF /* Debug */,
+				DD7502971C690C7A006590AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52D6D9731BEFF229002C0205 /* Project object */;
+}
