@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'QuickPersist'
-  s.version      = '0.1'
+  s.version      = '1.0.0'
   s.summary      = 'Easily save Structs to Realm.'
   s.description  = <<-DESC
     QuickPersist lets you easily save any data type to a Realm database.
