@@ -1,9 +1,9 @@
 # QuickPersist
 
 [![Language Swift](https://img.shields.io/badge/Language-Swift%204.0-orange.svg?style=flat)](https://swift.org)
-[![Version](https://img.shields.io/cocoapods/v/SwiftySweetness.svg?style=flat)](http://cocoapods.org/pods/SwiftySweetness)
-[![License](https://img.shields.io/cocoapods/l/SwiftySweetness.svg?style=flat)](http://cocoapods.org/pods/SwiftySweetness)
-[![Platform](https://img.shields.io/cocoapods/p/SwiftySweetness.svg?style=flat)](http://cocoapods.org/pods/SwiftySweetness)
+[![Version](https://img.shields.io/cocoapods/v/QuickPersist.svg?style=flat)](http://cocoapods.org/pods/QuickPersist)
+[![License](https://img.shields.io/cocoapods/l/QuickPersist.svg?style=flat)](http://cocoapods.org/pods/QuickPersist)
+[![Platform](https://img.shields.io/cocoapods/p/QuickPersist.svg?style=flat)](http://cocoapods.org/pods/QuickPersist)
 
 **QuickPersist** provides an easy way to save Swift structs to a Realm database.
 
