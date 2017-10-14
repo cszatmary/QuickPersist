@@ -20,7 +20,30 @@
 
 import Foundation
 
-public enum QPError: Error {
-    case unableToDelete
+/// A type that is able to be saved to a Realm database. Any type conforming to this protocol must also conform to the `Codable` protocol
+/// so that it can be converted to and from `JSON`.
+public protocol Persistable: Codable {
+    /// A string representing the name of the `Persistable` type.
+    static var typeName: String { get }
+    
+    /// The primary key of the instance. This used when retreiving values from a Realm.
+    var primaryKey: String { get }
+    
+    /// Creates an instance of a `Persistable` type from a `QPContainer`.
+    /// - parameter container: The container that stores the `JSON` encoded type.
+    static func create(fromContainer container: QPContainer) throws -> Self
+    
+    /// Creates a `QPContainer` from a `Persistable` instance.
+    func container() throws -> QPContainer
+}
+
+public extension Persistable {
+    public static func create(fromContainer container: QPContainer) throws -> Self {
+        return try JSONDecoder().decode(Self.self, from: container.data)
+    }
+    
+    public func container() throws -> QPContainer {
+        return QPContainer(data: try JSONEncoder().encode(self), typeName: Self.typeName, id: primaryKey)
+    }
 }
 
