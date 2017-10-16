@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   DESC
   s.homepage     = 'https://github.com/cszatma/QuickPersist'
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
-  s.author       = { 'cszatma' => 'cs@christopherszatmary.com' }
+  s.author       = { 'Christopher Szatmary' => 'cs@christopherszatmary.com' }
   s.source       = { :git => 'https://github.com/cszatma/QuickPersist.git', :tag => s.version.to_s }
   s.ios.deployment_target = '8.0'
   s.osx.deployment_target = '10.9'

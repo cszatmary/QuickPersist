@@ -90,7 +90,7 @@ let person = op.value(ofType: Person.self, withPrimaryKey: id)
 
 ### CocoaPods
 
-SwiftySweetness is available through [CocoaPods](http://cocoapods.org). To install
+QuickPersist is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
